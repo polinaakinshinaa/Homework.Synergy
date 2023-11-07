@@ -23,3 +23,15 @@ y = str(input())
 countx = len(x)
 county = len(y)
 print("x:", countx, "y:", county)
+# задание 6 
+s = "When he saw Sally (a girl he used to go to school with) in the shop, he could not believe his eyes. She was fantastic (as always)!"
+result = ""
+ids1 = s.find("(") 
+while ids1 != -1:  
+    ids2 = s.find(")", ids1)
+    if ids2 != -1: 
+        result += s[ids1 + 1: ids2]
+    else: 
+        break
+    ids1 = s.find("(", ids2)
+print(result) 
