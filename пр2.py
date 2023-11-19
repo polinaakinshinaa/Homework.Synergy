@@ -9,6 +9,6 @@ def maximum_number(n):
         else:
             return max_rest
 
-n = [3, 8, 1, 10, 5]
+n = [3, 8, 1, 10, 376, 193, 23, 5]
 m_n = maximum_number(n)
 print(m_n)
